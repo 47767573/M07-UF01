@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalcSimple.Controller">
+   <children>
+      <SplitPane dividerPositions="0.08656716417910448" layoutX="14.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="88.0" prefWidth="598.0">
+               <children>
+                  <Label fx:id="lblTitleCalculadora" alignment="CENTER" layoutX="111.0" layoutY="12.0" prefHeight="25.0" prefWidth="483.0" text="simple" textAlignment="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="327.0" prefWidth="598.0">
+               <children>
+                  <SplitPane dividerPositions="0.32666666666666666" layoutX="112.0" layoutY="26.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="483.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="tfPantalla" layoutX="42.0" layoutY="21.0" prefHeight="94.0" prefWidth="481.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane>
+                           <children>
+                              <GridPane fx:id="Grid" hgap="10.0" prefHeight="198.0" prefWidth="481.0" vgap="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Button fx:id="btnDot" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="76.0" text="." textAlignment="CENTER" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnCero" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="78.0" text="0" textAlignment="CENTER" GridPane.rowIndex="2" />
+                                    <Button fx:id="btnSiete" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="74.0" text="7" textAlignment="CENTER" GridPane.columnIndex="1" />
+                                    <Button fx:id="btnCuatro" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="75.0" text="4" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnUno" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="78.0" text="1" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Button fx:id="btnOcho" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="75.0" text="8" textAlignment="CENTER" GridPane.columnIndex="2" />
+                                    <Button fx:id="btnCinco" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="77.0" text="5" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnDos" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="74.0" text="2" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Button fx:id="btnNueve" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="74.0" text="9" textAlignment="CENTER" GridPane.columnIndex="3" />
+                                    <Button fx:id="btnSeis" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="76.0" text="6" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnTres" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="76.0" text="3" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Button fx:id="btnSuma" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="75.0" text="+" textAlignment="CENTER" GridPane.columnIndex="4" />
+                                    <Button fx:id="btnMultiplicar" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="75.0" text="x" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnRestar" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="77.0" text="-" textAlignment="CENTER" GridPane.columnIndex="5" />
+                                    <Button fx:id="btnDividir" alignment="CENTER" mnemonicParsing="false" prefHeight="59.0" prefWidth="75.0" text="/" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Button fx:id="btnResultado" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" prefHeight="52.0" prefWidth="148.0" text="=" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.hgrow="NEVER" GridPane.rowIndex="2" />
+                                    <Button fx:id="btnClear" alignment="CENTER" mnemonicParsing="false" prefHeight="60.0" prefWidth="74.0" text="C" textAlignment="CENTER" textFill="RED" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
