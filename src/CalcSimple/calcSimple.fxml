@@ -65,7 +65,7 @@
                                        <padding>
                                           <Insets right="10.0" />
                                        </padding></Button>
-                                    <Button fx:id="btnClear" alignment="CENTER" mnemonicParsing="false" onAction="#OnDeleteUnit" prefHeight="60.0" prefWidth="74.0" text="C" textAlignment="CENTER" textFill="RED" />
+                                    <Button fx:id="btnClear" alignment="CENTER" mnemonicParsing="false" onAction="#OnDelete" prefHeight="60.0" prefWidth="74.0" text="C" textAlignment="CENTER" textFill="RED" />
                                  </children>
                               </GridPane>
                            </children>
