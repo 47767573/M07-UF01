@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="editortexto.Controller">
+   <children>
+      <VBox layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <MenuBar fx:id="mb0">
+              <menus>
+                <Menu fx:id="mbFichero" mnemonicParsing="false" text="Fichero">
+                  <items>
+                    <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#OnSalir" text="Salir" />
+                  </items>
+                </Menu>
+                <Menu fx:id="mbEditar" mnemonicParsing="false" text="Editar">
+                  <items>
+                    <MenuItem fx:id="miCopiar" mnemonicParsing="false" onAction="#OnCopiar" text="Copiar" />
+                        <MenuItem fx:id="miCortar" mnemonicParsing="false" onAction="#OnCortar" text="Cortar" />
+                        <MenuItem fx:id="miPegar" mnemonicParsing="false" onAction="#OnPegar" text="Pegar" />
+                        <MenuItem fx:id="miDeshacer" mnemonicParsing="false" onAction="#OnDeshacer" text="Deshacer" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="mbOpcion" mnemonicParsing="false" text="Opciones">
+                     <items>
+                        <Menu fx:id="mbFuente" mnemonicParsing="false" text="Fuente">
+                          <items>
+                            <MenuItem fx:id="miEstilo" mnemonicParsing="false" text="Estilo" />
+                              <MenuItem fx:id="miProfesional" mnemonicParsing="false" text="Profesional" />
+                              <MenuItem fx:id="miConvencional" mnemonicParsing="false" text="Convencional" />
+                          </items>
+                        </Menu>
+                        <Menu fx:id="mbTamano" mnemonicParsing="false" text="Tamaño">
+                          <items>
+                            <MenuItem fx:id="miGranTitulo" mnemonicParsing="false" text="Gran titulo" />
+                              <MenuItem fx:id="miTitulo" mnemonicParsing="false" text="Titulo" />
+                              <MenuItem fx:id="miParrafo" mnemonicParsing="false" text="Parrafo" />
+                          </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+                <Menu fx:id="mb4" mnemonicParsing="false" text="Ayuda">
+                  <items>
+                    <MenuItem fx:id="miAyuda" mnemonicParsing="false" text="?" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextArea fx:id="taEditor" prefHeight="361.0" prefWidth="590.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

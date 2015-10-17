@@ -63,12 +63,10 @@ public class Controller {
 
     }
 
-    public void OnDeleteUnit(ActionEvent actionEvent) {
-        String numNuevo;
-
+    public void OnDelete(ActionEvent actionEvent) {
         String numAntes =  tfPantalla.getText();
         if (numAntes.length() >= 0) {
-            numNuevo = numAntes.substring(0, (numAntes.length() - 2));
+            numAntes.substring(0, (numAntes.length() - 2));
         }else{
             tfPantalla.setText ("0");
         }
