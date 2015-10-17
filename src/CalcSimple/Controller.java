@@ -56,19 +56,17 @@ public class Controller {
         }else if (symbol.equals("-")) {
             total = dbNum1-dbNum2;
         }
-
         num1 = String.valueOf(total);
         tfPantalla.setText(String.valueOf(total));
         num2="";
+        OnOperacion(actionEvent);
 
     }
 
     public void OnDelete(ActionEvent actionEvent) {
-        String numAntes =  tfPantalla.getText();
-        if (numAntes.length() >= 0) {
-            numAntes.substring(0, (numAntes.length() - 2));
-        }else{
-            tfPantalla.setText ("0");
-        }
+        num1="";
+        num2="";
+        tfPantalla.setText("0");
+        OnIgual(actionEvent);
     }
 }

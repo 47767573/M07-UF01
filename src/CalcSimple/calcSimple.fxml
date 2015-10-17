@@ -16,7 +16,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="88.0" prefWidth="598.0">
                <children>
-                  <Label fx:id="lblTitleCalculadora" alignment="CENTER" layoutX="111.0" layoutY="12.0" prefHeight="25.0" prefWidth="483.0" text="simple" textAlignment="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Label fx:id="lblTitleCalculadora" alignment="CENTER" layoutX="111.0" layoutY="12.0" maxHeight="30.0" prefHeight="25.0" prefWidth="483.0" text="simple" textAlignment="RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="327.0" prefWidth="598.0">
@@ -61,17 +61,13 @@
                                     <Button fx:id="btnMultiplicar" alignment="CENTER" mnemonicParsing="false" onAction="#OnOperacion" prefHeight="59.0" prefWidth="75.0" text="x" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" />
                                     <Button fx:id="btnRestar" alignment="CENTER" mnemonicParsing="false" onAction="#OnOperacion" prefHeight="60.0" prefWidth="77.0" text="-" textAlignment="CENTER" GridPane.columnIndex="5" />
                                     <Button fx:id="btnDividir" alignment="CENTER" mnemonicParsing="false" onAction="#OnOperacion" prefHeight="59.0" prefWidth="75.0" text="/" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-<<<<<<< HEAD
-                                    <Button fx:id="btnResultado" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnIgual" prefHeight="52.0" prefWidth="148.0" text="=" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.rowSpan="2147483647"/>
 
-                                    <Button fx:id="btnClear" alignment="CENTER" mnemonicParsing="false" onAction="#OnDeleteUnit" prefHeight="60.0" prefWidth="74.0" text="C" textAlignment="CENTER" textFill="RED" />
-=======
                                     <Button fx:id="btnResultado" alignment="CENTER" minWidth="-Infinity" mnemonicParsing="false" onAction="#OnIgual" prefHeight="52.0" prefWidth="148.0" text="=" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" GridPane.rowSpan="2147483647">
-                                       <padding>
-                                          <Insets right="10.0" />
-                                       </padding></Button>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin></Button>
+
                                     <Button fx:id="btnClear" alignment="CENTER" mnemonicParsing="false" onAction="#OnDelete" prefHeight="60.0" prefWidth="74.0" text="C" textAlignment="CENTER" textFill="RED" />
->>>>>>> 19044b1ac11fb52ee1397ad68c99ce7578e192d6
                                  </children>
                               </GridPane>
                            </children>
