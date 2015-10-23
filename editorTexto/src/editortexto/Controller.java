@@ -13,7 +13,6 @@ import javax.swing.text.EditorKit;
 public class Controller {
 
     @FXML
-
     private MenuItem salir;
     private TextArea editor;
 
