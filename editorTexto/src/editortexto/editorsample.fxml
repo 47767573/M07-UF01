@@ -9,7 +9,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="editortexto.Controller">
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="editortexto.Controller">
    <children>
       <VBox layoutX="5.0" layoutY="5.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
@@ -32,16 +32,15 @@
                      <items>
                         <Menu fx:id="mbFuente" mnemonicParsing="false" text="Fuente">
                           <items>
-                            <MenuItem fx:id="miEstilo" mnemonicParsing="false" text="Estilo" />
-                              <MenuItem fx:id="miProfesional" mnemonicParsing="false" text="Profesional" />
-                              <MenuItem fx:id="miConvencional" mnemonicParsing="false" text="Convencional" />
+                            <MenuItem fx:id="miArial" mnemonicParsing="false" onAction="#setFontArial" text="Arial" />
+                              <MenuItem fx:id="miFreemono" mnemonicParsing="false" onAction="#setFontTimes" text="Freemono" />
                           </items>
                         </Menu>
                         <Menu fx:id="mbTamano" mnemonicParsing="false" text="Tamaño">
                           <items>
-                            <MenuItem fx:id="miGranTitulo" mnemonicParsing="false" text="Gran titulo" />
-                              <MenuItem fx:id="miTitulo" mnemonicParsing="false" text="Titulo" />
-                              <MenuItem fx:id="miParrafo" mnemonicParsing="false" text="Parrafo" />
+                            <MenuItem fx:id="miFontSize20" mnemonicParsing="false" onAction="#setFontSize" text="20" />
+                              <MenuItem fx:id="miFontSize14" mnemonicParsing="false" onAction="#setFontSize" text="14" />
+                              <MenuItem fx:id="miFontSize11" mnemonicParsing="false" onAction="#setFontSize" text="11" />
                           </items>
                         </Menu>
                      </items>
